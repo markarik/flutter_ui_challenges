@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:uidestinationchallenge/pages/ui/day1signinsignup/signin.dart';
+import 'package:uidestinationchallenge/pages/HomePage.dart';
 
 class SplashPage extends StatefulWidget {
 
@@ -22,7 +22,7 @@ class SplashPageState extends State<SplashPage> {
 
    loadData() async {
     return new Timer(Duration(seconds: 5),(){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage()));
 
     });
   }
