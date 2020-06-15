@@ -110,7 +110,7 @@ class _D2HomePageState extends State<D2HomePage>
                                     ),
                                   ),
                                   Text(
-                                    "\$20,000",
+                                    "\$2500.00",
                                     style: card2Style,
                                   ),
                                 ],
@@ -145,7 +145,7 @@ class _D2HomePageState extends State<D2HomePage>
                                   ),
                                 ),
                                 Text(
-                                  "\$20,000",
+                                  "\$1500.00",
                                   style: card2Style,
                                 ),
 
@@ -183,7 +183,7 @@ class _D2HomePageState extends State<D2HomePage>
                                   ),
                                 ),
                                 Text(
-                                  "\$20,000",
+                                  "\$800.00",
                                   style: card2Style,
                                 ),
                               ],
@@ -318,7 +318,7 @@ class _D2HomePageState extends State<D2HomePage>
                                           style: card3Style,
                                         ),
                                         Text(
-                                          '\$48000.00',
+                                          '\$250.00',
                                           style: TextStyle(color: colorOrange),
                                         ),
                                       ],
@@ -361,8 +361,10 @@ class _D2HomePageState extends State<D2HomePage>
                             height: 85,
                             width: 100,
                             child: Center(
-                              child: Icon(
-                                Icons.shopping_cart,
+                              child:FaIcon(FontAwesomeIcons.tshirt,
+
+                              // Icon(
+                              //   Icons.t,
                                 size: 50,
                                 color: colorWhite,
                               ),
@@ -384,7 +386,7 @@ class _D2HomePageState extends State<D2HomePage>
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        'Groceries',
+                                        'Clothes',
                                         style: header2Style,
                                       ),
                                       Text(
@@ -406,7 +408,7 @@ class _D2HomePageState extends State<D2HomePage>
                                           style: card3Style,
                                         ),
                                         Text(
-                                          '\$48000.00',
+                                          '\$800.00',
                                           style: TextStyle(color: colorPurple),
                                         ),
                                       ],
@@ -450,7 +452,7 @@ class _D2HomePageState extends State<D2HomePage>
                             width: 100,
                             child: Center(
                               child: Icon(
-                                Icons.shopping_cart,
+                                Icons.home,
                                 size: 50,
                                 color: colorWhite,
                               ),
@@ -472,7 +474,7 @@ class _D2HomePageState extends State<D2HomePage>
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        'Groceries',
+                                        'Rental',
                                         style: header2Style,
                                       ),
                                       Text(
