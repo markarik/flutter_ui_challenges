@@ -1,7 +1,7 @@
 # uidestinationchallenge
 
 flutter Uis challenges motivated from various designs.
-# Project Title
+# Source of Designs Motivations
 
 
 * [DayOne](https://search.muz.li/ZjQ0MzRlOGU4)
