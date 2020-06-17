@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uidestinationchallenge/pages/ui/day1signinsignup/signin.dart';
 import 'package:uidestinationchallenge/pages/ui/day2homepage/homemainpage.dart';
+import 'package:uidestinationchallenge/pages/ui/day3/homepageday3.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -36,6 +37,21 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: new Text(
                   "Day 2",
+                ),
+              ),
+            ),
+
+             Container(
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => HomePage3()));
+                },
+                textColor: Colors.white,
+                color: Colors.red,
+                padding: const EdgeInsets.all(8.0),
+                child: new Text(
+                  "Day 3",
                 ),
               ),
             )
