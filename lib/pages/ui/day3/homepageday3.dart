@@ -277,9 +277,9 @@ class _HomePage3State extends State<HomePage3> {
                         overflow: Overflow.visible,
                         children: <Widget>[
                           Container(
-                            margin: EdgeInsets.all(20),
+                            margin: EdgeInsets.only(left:30),
                             width: 80,
-                            height: 70,
+                            height: 80,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
@@ -291,8 +291,8 @@ class _HomePage3State extends State<HomePage3> {
 
 
                           Positioned(
-                            bottom: 15,
-                            right: 15,
+                            bottom: 0,
+                            right: -9,
                             child: Container(
                               decoration: BoxDecoration(
                                   color: colorBlack,
