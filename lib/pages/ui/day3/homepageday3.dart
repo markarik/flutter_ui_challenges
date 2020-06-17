@@ -19,12 +19,17 @@ class _HomePage3State extends State<HomePage3> {
       body: SingleChildScrollView(
         child: Stack(
           children: <Widget>[
-            SizedBox(
+            Container(
               height: 250,
               width: double.infinity,
-              child: Image(
-                image: AssetImage('assets/mark.jpg'),
-                fit: BoxFit.cover,
+              decoration: BoxDecoration(
+                // shape: BoxShape.circle,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  colorFilter: new ColorFilter.mode(
+                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                  image: AssetImage('assets/mark.jpg'),
+                ),
               ),
             ),
             Container(
@@ -37,8 +42,12 @@ class _HomePage3State extends State<HomePage3> {
                         padding: EdgeInsets.all(16.0),
                         margin: EdgeInsets.only(top: 16.0),
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(5.0)),
+                          color: Colors.white,
+                          borderRadius: new BorderRadius.only(
+                            topLeft: const Radius.circular(30.0),
+                            topRight: const Radius.circular(30.0),
+                          ),
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -162,64 +171,68 @@ class _HomePage3State extends State<HomePage3> {
                                   ),
                                   Divider(),
                                   Padding(
-                                     padding: const EdgeInsets.only(top:8.0),
+                                    padding: const EdgeInsets.only(top: 8.0),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
-                                        Text("Two-Factor Authentication",
-                                        style: card3Style,
+                                        Text(
+                                          "Two-Factor Authentication",
+                                          style: card3Style,
                                         ),
-                                        Icon(Icons.arrow_forward_ios,
-                                        size: 15,
-                                        color: colorGrey,
+                                        Icon(
+                                          Icons.arrow_forward_ios,
+                                          size: 15,
+                                          color: colorGrey,
                                         ),
                                       ],
                                     ),
                                   ),
-                                   Padding(
-                                     padding: const EdgeInsets.only(top:20.0),
-                                     child: Row(
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20.0),
+                                    child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
-                                        Text("Mobile Data Use",
-                                        style: card3Style,
+                                        Text(
+                                          "Mobile Data Use",
+                                          style: card3Style,
                                         ),
-                                        Icon(Icons.arrow_forward_ios,
-                                        size: 15,
-                                        color: colorGrey,
+                                        Icon(
+                                          Icons.arrow_forward_ios,
+                                          size: 15,
+                                          color: colorGrey,
                                         ),
                                       ],
+                                    ),
                                   ),
-                                   ),
-
-                                   Padding(
-                                     padding: const EdgeInsets.only(top:20.0),
-                                     child: Row(
-                                       
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20.0),
+                                    child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
-                                        Text("Language",
-                                        style: card3Style,
+                                        Text(
+                                          "Language",
+                                          style: card3Style,
                                         ),
                                         Row(
                                           children: <Widget>[
-                                            Text("English",
-                                            style: card3Style,
+                                            Text(
+                                              "English",
+                                              style: card3Style,
                                             ),
-                                            Icon(Icons.arrow_forward_ios,
-                                            size: 15,
-                                            color: colorGrey,
+                                            Icon(
+                                              Icons.arrow_forward_ios,
+                                              size: 15,
+                                              color: colorGrey,
                                             ),
                                           ],
                                         ),
                                       ],
+                                    ),
                                   ),
-                                   ),
-
-                                   SizedBox(height: 5.0),
+                                  SizedBox(height: 5.0),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 5),
                                     child: Row(
@@ -233,31 +246,27 @@ class _HomePage3State extends State<HomePage3> {
                                   ),
                                   Divider(),
                                   Padding(
-                                     padding: const EdgeInsets.only(top:8.0),
+                                    padding: const EdgeInsets.only(top: 8.0),
                                     child: Row(
-                                      
                                       children: <Widget>[
-                                        Text("Call Us",
-                                        style: card3Style,
+                                        Text(
+                                          "Call Us",
+                                          style: card3Style,
                                         ),
-                                        
                                       ],
                                     ),
                                   ),
-
                                   Padding(
-                                     padding: const EdgeInsets.only(top:20.0),
+                                    padding: const EdgeInsets.only(top: 20.0),
                                     child: Row(
-                                      
                                       children: <Widget>[
-                                        Text("Feed Back",
-                                        style: card3Style,
+                                        Text(
+                                          "Feed Back",
+                                          style: card3Style,
                                         ),
-                                        
                                       ],
                                     ),
                                   ),
-                                  
                                 ],
                               ),
                             )
@@ -268,21 +277,22 @@ class _HomePage3State extends State<HomePage3> {
                         overflow: Overflow.visible,
                         children: <Widget>[
                           Container(
-                            margin: EdgeInsets.only(left: 16.0),
+                            margin: EdgeInsets.all(20),
                             width: 80,
                             height: 70,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.0),
-
-                              // shape: BoxShape.circle,
+                              shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/mark.jpg'),
-                              ),
+                                  image: AssetImage('assets/mark.jpg'),
+                                  fit: BoxFit.fill),
                             ),
                           ),
+
+
+
                           Positioned(
-                            bottom: 0,
-                            right: -9,
+                            bottom: 15,
+                            right: 15,
                             child: Container(
                               decoration: BoxDecoration(
                                   color: colorBlack,
