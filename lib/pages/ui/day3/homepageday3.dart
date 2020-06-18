@@ -13,7 +13,6 @@ class _HomePage3State extends State<HomePage3> {
 
   @override
   Widget build(BuildContext context) {
-    bool isSwitched = false;
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
       body: SingleChildScrollView(
@@ -146,7 +145,7 @@ class _HomePage3State extends State<HomePage3> {
                                         value: isSwitched2,
                                         onChanged: (value) {
                                           setState(() {
-                                            isSwitched = value;
+                                            isSwitched2 = value;
                                             print(isSwitched);
                                           });
                                         },
@@ -328,29 +327,3 @@ class _HomePage3State extends State<HomePage3> {
     );
   }
 }
-// class _HomePage3 extends State<HomePage3> {
-
-//   bool isSwitched = false;
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: Colors.green,
-//         title: Text("Flutter Switch Example"),
-//       ),
-//       body: Center(
-//   child: Switch(
-//     value: isSwitched,
-//     onChanged: (value){
-//       setState(() {
-//         isSwitched=value;
-//         print(isSwitched);
-//       });
-//     },
-//     activeTrackColor: Colors.lightGreenAccent,
-//     activeColor: Colors.green,
-//   ),
-// ),
-//     );
-//   }
-// }
